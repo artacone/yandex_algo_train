@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main()  {
+func main() {
 	var a, b, c, d, e, f float64
 	fmt.Scan(&a, &b, &c, &d, &e, &f)
 
@@ -48,13 +48,13 @@ func main()  {
 			}
 		}
 		if a != 0 {
-			k := c/a
+			k := c / a
 			if d == k*b && f == k*e {
 				fmt.Println(1, -a/b, e/b)
 				return
 			}
 		} else {
-			k := a/c
+			k := a / c
 			if b == k*d && e == k*f {
 				fmt.Println(1, -c/d, f/d)
 				return

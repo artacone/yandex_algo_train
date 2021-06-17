@@ -14,7 +14,7 @@ func main() {
 			} else {
 				fmt.Println("NO SOLUTION")
 			}
-		} else if (c*c - b) % a == 0 {
+		} else if (c*c-b)%a == 0 {
 			fmt.Println((c*c - b) / a)
 		} else {
 			fmt.Println("NO SOLUTION")

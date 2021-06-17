@@ -3,11 +3,11 @@ package main
 import "fmt"
 
 func findL(m, k, p, n int) []int {
-	minL := k / (m*(p - 1) + n)
-	maxL := (k - 1) / (m*(p - 1) + n - 1)
+	minL := k / (m*(p-1) + n)
+	maxL := (k - 1) / (m*(p-1) + n - 1)
 	var possibleL []int
 	for l := minL; l <= maxL; l++ {
-		if l != 0 && (m*(p - 1) + n - 1)*l + (k - 1) % l == k - 1 {
+		if l != 0 && (m*(p-1)+n-1)*l+(k-1)%l == k-1 {
 			possibleL = append(possibleL, l)
 		}
 	}
@@ -34,7 +34,7 @@ func ambulance(k1, k2, n2, p2, m int) (p1, n1 int) {
 	}
 	result := [2]int{-1, -1}
 	for _, l := range possibleL {
-		i := ((k1 - 1 - (k1 - 1) % l) / l) + 1
+		i := ((k1 - 1 - (k1-1)%l) / l) + 1
 		n1 = i % m
 		p1 = ((i - n1) / m) + 1
 		if n1 == 0 {

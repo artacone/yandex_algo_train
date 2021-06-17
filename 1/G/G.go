@@ -14,14 +14,14 @@ func makeDetails(mMetal *int, nBlanks, nDetailsPerBlank, mExcessivePerBlank int)
 	return nDetails
 }
 
-func countDetails(mMetal, mBlank, mDetail int) int{
+func countDetails(mMetal, mBlank, mDetail int) int {
 	var nDetails, nBlanks int
 	nDetailsPerBlank := mBlank / mDetail
 	mExcessivePerBlank := mBlank % mDetail
 	if nDetailsPerBlank == 0 {
 		return 0
 	}
-	for ; mMetal >= mBlank; {
+	for mMetal >= mBlank {
 		nBlanks = makeBlanks(&mMetal, mBlank)
 		nDetails += makeDetails(&mMetal, nBlanks, nDetailsPerBlank, mExcessivePerBlank)
 	}

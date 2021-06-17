@@ -7,7 +7,7 @@ import (
 func main() {
 	var current, prev int
 	fmt.Scan(&prev)
-	for ; ; {
+	for {
 		scan, _ := fmt.Scan(&current)
 		if scan == 0 {
 			break
@@ -20,12 +20,3 @@ func main() {
 	}
 	fmt.Println("YES")
 }
-if isConstan
-if cur != prev
- isconstant = false
- if ascendinf
- if cur <= prev
- isas = false
- if
-
- if isconst
