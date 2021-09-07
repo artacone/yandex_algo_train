@@ -21,7 +21,7 @@ func main() {
 			max[0] = n
 		}
 		if n < min[0] {
-			min[1], min[0] = n, min[1]
+			min[0], min[1] = n, min[0]
 		} else if n < min[1] {
 			min[1] = n
 		}
