@@ -7,7 +7,7 @@
 - Контест #1 "Сложность, тестирование, особые случаи" [контест](https://contest.yandex.ru/contest/27393/problems/), [решения](1/)
 10/10
 - Контест #2 "Линейный поиск" [контест](https://contest.yandex.ru/contest/27472/problems/), [решения](2/)
-1/10
+10/10
 - Контест #3 "Множества" [контест](https://contest.yandex.ru/contest/27663/problems/), [решения](3/)
 0/10
 - Контест #4 "Словари и сортировка подсчётом" [контест](https://contest.yandex.ru/contest/27665/problems/), [решения](4/)
