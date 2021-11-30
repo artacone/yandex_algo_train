@@ -1,16 +1,27 @@
 package main
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"log"
+	"os"
+	"strconv"
+)
+
+type void struct{}
+
+var exist void
 
 func main() {
-	setNums := make(map[int]bool)
-	var n int
-	for {
-		scan, _ := fmt.Scanf("%d", &n)
-		if scan == 0 {
-			break
+	setNums := make(map[int64]void)
+	scanner := bufio.NewScanner(os.Stdin)
+	scanner.Split(bufio.ScanWords)
+	for scanner.Scan() {
+		n, err := strconv.ParseInt(scanner.Text(), 10, 64)
+		if err != nil {
+			log.Panic(err)
 		}
-		setNums[n] = true
+		setNums[n] = exist
 	}
-	println(len(setNums))
+	fmt.Println(len(setNums))
 }
