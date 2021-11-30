@@ -9,7 +9,7 @@
 - Контест #2 "Линейный поиск" [контест](https://contest.yandex.ru/contest/27472/problems/), [решения](2/)
 10/10
 - Контест #3 "Множества" [контест](https://contest.yandex.ru/contest/27663/problems/), [решения](3/)
-2/10
+3/10
 - Контест #4 "Словари и сортировка подсчётом" [контест](https://contest.yandex.ru/contest/27665/problems/), [решения](4/)
 0/10
 - Контест #5 "Префиксные суммы и два указателя" [контест](https://contest.yandex.ru/contest/27794/problems/), [решения](5/)
