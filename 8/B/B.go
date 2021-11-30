@@ -56,7 +56,10 @@ func buildTree() (root *TreeNode, heights []int) {
 		if n == 0 {
 			break
 		}
-		heights = append(heights, root.Insert(n))
+		h := root.Insert(n)
+		if h != 0 {
+			heights = append(heights, h)
+		}
 	}
 	return
 }
