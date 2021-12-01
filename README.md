@@ -11,9 +11,9 @@
 - Контест #3 "Множества" [контест](https://contest.yandex.ru/contest/27663/problems/), [решения](3/)
 5/10
 - Контест #4 "Словари и сортировка подсчётом" [контест](https://contest.yandex.ru/contest/27665/problems/), [решения](4/)
-4/10
+5/10
 - Контест #5 "Префиксные суммы и два указателя" [контест](https://contest.yandex.ru/contest/27794/problems/), [решения](5/)
-1/10
+2/10
 - Контест #6 "Бинарный поиск" [контест](https://contest.yandex.ru/contest/27844/problems/), [решения](6/)
 1/10
 - Контест #7 "Сортировка событий" [контест](https://contest.yandex.ru/contest/27883/problems/), [решения](7/)
