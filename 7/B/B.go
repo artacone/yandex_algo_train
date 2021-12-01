@@ -26,6 +26,9 @@ func main() {
 		l, _ := strconv.Atoi(sc.Text())
 		sc.Scan()
 		r, _ := strconv.Atoi(sc.Text())
+		if l > r {
+			l, r = r, l
+		}
 		events = append(events, [3]int{l, BEGIN, 0})
 		events = append(events, [3]int{r, END, 0})
 	}
