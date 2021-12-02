@@ -29,7 +29,7 @@ func abs(a int) int {
 	return a
 }
 
-func (t *TreeNode) Insert(n int) error {
+func (t *TreeNode) Insert(n int) (err error) {
 	if t == nil {
 		return fmt.Errorf("tree is nil")
 	}
@@ -41,16 +41,18 @@ func (t *TreeNode) Insert(n int) error {
 			t.LeftDepth = 1
 			return nil
 		}
+		err = t.Left.Insert(n)
 		t.LeftDepth = 1 + max(t.Left.LeftDepth, t.Left.RightDepth)
-		return t.Left.Insert(n)
+		return
 	} else {
 		if t.Right == nil {
 			t.Right = &TreeNode{Value: n}
 			t.RightDepth = 1
 			return nil
 		}
+		err = t.Right.Insert(n)
 		t.RightDepth = 1 + max(t.Right.LeftDepth, t.Right.RightDepth)
-		return t.Right.Insert(n)
+		return err
 	}
 }
 
@@ -71,12 +73,6 @@ func buildTree() (root *TreeNode) {
 			break
 		}
 		root.Insert(n)
-	}
-	if root.Left != nil {
-		root.LeftDepth = 1 + max(root.Left.LeftDepth, root.Left.RightDepth)
-	}
-	if root.Right != nil {
-		root.RightDepth = 1 + max(root.Right.RightDepth, root.Right.RightDepth)
 	}
 	return
 }
