@@ -4,11 +4,11 @@ import "fmt"
 
 func findNFives(a, b, c int) int {
 	l, r := 0, a+b+c
-	prevSum := 2*a + 3*b + 4*c
-	prevN := a + b + c
+	twicePrevSum := 4*a + 6*b + 8*c
+	sevenPrevN := 7 * (a + b + c)
 	for l < r {
 		m := int(uint(l+r) >> 1)
-		if 2*(prevSum+5*m) >= 7*(prevN+m) {
+		if twicePrevSum+3*m >= sevenPrevN { // (prevSum + 5*m)/(prevN+m) >= 3.5
 			r = m
 		} else {
 			l = m + 1
