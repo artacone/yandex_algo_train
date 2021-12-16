@@ -4,19 +4,19 @@
 
 ## Что сделано?
 
-- Контест #1 "Сложность, тестирование, особые случаи" [контест](https://contest.yandex.ru/contest/27393/problems/), [решения](1/)
+- Контест #1 "Сложность, тестирование, особые случаи" [контест](https://contest.yandex.ru/contest/27393/problems/), [решения](1)
 10/10
-- Контест #2 "Линейный поиск" [контест](https://contest.yandex.ru/contest/27472/problems/), [решения](2/)
+- Контест #2 "Линейный поиск" [контест](https://contest.yandex.ru/contest/27472/problems/), [решения](2)
 10/10
-- Контест #3 "Множества" [контест](https://contest.yandex.ru/contest/27663/problems/), [решения](3/)
+- Контест #3 "Множества" [контест](https://contest.yandex.ru/contest/27663/problems/), [решения](3)
 8/10
-- Контест #4 "Словари и сортировка подсчётом" [контест](https://contest.yandex.ru/contest/27665/problems/), [решения](4/)
-6/10
+- Контест #4 "Словари и сортировка подсчётом" [контест](https://contest.yandex.ru/contest/27665/problems/), [решения](4)
+7/10
 - Контест #5 "Префиксные суммы и два указателя" [контест](https://contest.yandex.ru/contest/27794/problems/), [решения](5)
 3/10
-- Контест #6 "Бинарный поиск" [контест](https://contest.yandex.ru/contest/27844/problems/), [решения](6/)
+- Контест #6 "Бинарный поиск" [контест](https://contest.yandex.ru/contest/27844/problems/), [решения](6)
 7/11
-- Контест #7 "Сортировка событий" [контест](https://contest.yandex.ru/contest/27883/problems/), [решения](7/)
+- Контест #7 "Сортировка событий" [контест](https://contest.yandex.ru/contest/27883/problems/), [решения](7)
 2/10
-- Контест #8 "Деревья" [контест](https://contest.yandex.ru/contest/28069/problems/), [решения](8/)
+- Контест #8 "Деревья" [контест](https://contest.yandex.ru/contest/28069/problems/), [решения](8)
 8/10
