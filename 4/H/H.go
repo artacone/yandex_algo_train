@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"reflect"
 )
 
 func main() {
@@ -20,23 +19,45 @@ func main() {
 		target[word[i]]++
 	}
 
-	current := make(map[byte]int)
+	unmatched := make(map[byte]int)
+	for s, q := range target {
+		unmatched[s] = q
+	}
+
 	for i := 0; i < lenWord; i++ {
-		current[seq[i]]++
+		s := seq[i]
+		if _, ok := target[s]; ok {
+			unmatched[s]--
+			if unmatched[s] == 0 {
+				delete(unmatched, s)
+			}
+		}
 	}
 
 	count := 0
-	if reflect.DeepEqual(current, target) {
+	if len(unmatched) == 0 {
 		count++
 	}
 	for i := lenWord; i < lenSeq; i++ {
 		currSymbol, prevSymbol := seq[i], seq[i-lenWord]
-		current[currSymbol]++
-		current[prevSymbol]--
-		if current[prevSymbol] < 1 {
-			delete(current, prevSymbol)
+
+		if currSymbol != prevSymbol {
+			if _, ok := target[currSymbol]; ok {
+				unmatched[currSymbol]--
+				if unmatched[currSymbol] == 0 {
+					delete(unmatched, currSymbol)
+				}
+			}
+
+			if _, ok := target[prevSymbol]; ok {
+				unmatched[prevSymbol]++
+				if unmatched[prevSymbol] == 0 {
+					delete(unmatched, prevSymbol)
+				}
+			}
 		}
-		if reflect.DeepEqual(current, target) {
+
+		if len(unmatched) == 0 {
 			count++
 		}
 	}
