@@ -1,25 +1,32 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
+	"os"
+	"strconv"
+	"strings"
 )
 
 func main() {
-	var (
-		lenWord, lenSeq int
-		word, seq       string
-	)
-	_, err := fmt.Scanf("%d %d\n%s\n%s\n", &lenWord, &lenSeq, &word, &seq)
-	if err != nil {
-		return
-	}
+	sc := bufio.NewScanner(os.Stdin)
+	buf := make([]byte, 4e6)
+	sc.Buffer(buf, 4e6)
+	sc.Scan()
+	lens := strings.Fields(sc.Text())
+	lenWord, _ := strconv.Atoi(lens[0])
+	lenSeq, _ := strconv.Atoi(lens[1])
+	sc.Scan()
+	word := sc.Text()
+	sc.Scan()
+	seq := sc.Text()
 
-	target := make(map[byte]int, lenWord)
+	target := make(map[byte]int, 26+26)
 	for i := range word {
 		target[word[i]]++
 	}
 
-	unmatched := make(map[byte]int)
+	unmatched := make(map[byte]int, len(target))
 	for s, q := range target {
 		unmatched[s] = q
 	}
